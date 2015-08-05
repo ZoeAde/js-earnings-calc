@@ -5,17 +5,6 @@ function clearValues() {
   }
 }
 
-function locate(element, node, getValue) {
-  if (getValue === false) {
-    return $(element).eq(node);
-  } else if (getValue === true) {
-    return +$(element).eq(node).val();
-  }
-}
-
-function tipDollarAmount(total, percent) {
-  return total * (percent / 100);
-}
 
 modules.export = {
   locate: locate,
